@@ -12,13 +12,13 @@ build:
       - export DISPLAY=:99.0
       - xvfb-run --server-args="-ac" npm test
 
-integrations:
-  deploy:
-    - integrationName: "aws-test"
-      type: aws
-      target: eb_paas
-      platform: "Node.js"
-      application_name: sample-node-eb-paas-app
-      env_name: sample-node-eb-paas-env
-      region: ap-northeast-1
+#integrations:
+#  deploy:
+#    - integrationName: "aws-test"
+#      type: aws
+#      target: eb_paas
+#      platform: "Node.js"
+#      application_name: sample-node-eb-paas-app
+#      env_name: sample-node-eb-paas-env
+#      region: ap-northeast-1
 
